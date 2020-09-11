@@ -11,77 +11,78 @@ var specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", "
 var confirmSpecialChar;
 var confirmUppercase;
 var confirmLowercase;
-var confirmNumbers; 
+var confirmNumbers;
 
 function generatePassword() {
   //Prompts for number of characters
 
-// array to be stored here
-var combinedArray = [];
-var passwordArray = [];
-// User prompts to include in Password
+  // array to be stored here
+  var combinedArray = [];
+  var passwordArray = [];
+  // User prompts to include in Password
   var numberChars = prompt("How many characters would you like in you password?");
-//Prompt for characters that are not numbers
+  //Prompt for characters that are not numbers
   if (isNaN(numberChars)) {
     alert("You must enter a number");
-    return "Try Again!"}
+    return "Try Again!"
+  }
 
-  if (numberChars <8) {
+  if (numberChars < 8) {
     alert("Your password must be at least 8 characters")
     return "Try again"
   }
- 
-  if (numberChars > 128){
+
+  if (numberChars > 128) {
     alert("Password length must be less than 129 characters");
     return "Try Again!"
   }
-  
+
   else {
-   
+
     specialChar = confirm("Click OK if you want special characters in your password");
-   
+
     if (specialChar) {
-      
+
       for (var i = 0; i < specialChar.length; i++) {
-    
+
         combinedArray.push(specialChar[i]);
       }
     }
-    
+
     confirmNumbers = confirm("Click OK if you want numbers in your password");
-    
+
     if (confirmNumbers) {
-     
+
       for (var i = 0; i < numb.length; i++) {
-       
+
         combinedArray.push(numb[i]);
       }
     }
     confirmLowercase = confirm("Click OK if you want lowercase letters in your password");
-   
+
     if (confirmLowercase) {
-    
+
       for (var i = 0; i < lowercase.length; i++) {
-      
+
         combinedArray.push(lowercase[i]);
       }
     }
-    
+
     confirmUppercase = confirm("CLick OK if you want uppercase letters in your password");
-   
+
     if (confirmUppercase) {
-      
+
       for (var i = 0; i < uppercase.length; i++) {
-      
+
         combinedArray.push(uppercase[i]);
       }
     }
-   
+
     for (var i = 0; i < numberChars; i++) {
-     
+
       passwordArray.push(combinedArray[(Math.floor(Math.random() * combinedArray.length))]);
     }
-   
+
     userPassword = passwordArray.join("");
     return userPassword;
   }
