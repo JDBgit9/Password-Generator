@@ -19,7 +19,7 @@ function generatePassword() {
 // array to be stored here
 var combinedArray = [];
 var passwordArray = [];
-
+// User prompts to include in Password
   var numberChars = prompt("How many characters would you like in you password?");
 
   if (isNaN(numberChars)) {
