@@ -21,7 +21,7 @@ var combinedArray = [];
 var passwordArray = [];
 // User prompts to include in Password
   var numberChars = prompt("How many characters would you like in you password?");
-
+//Prompt for characters that are not numbers
   if (isNaN(numberChars)) {
     alert("You must enter a number");
     return "Try Again!"}
