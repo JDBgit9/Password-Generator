@@ -78,7 +78,7 @@ function generatePassword() {
         combinedArray.push(uppercase[i]);
       }
     }
-
+//Create random variables for computer to use
     for (var i = 0; i < numberChars; i++) {
 
       passwordArray.push(combinedArray[(Math.floor(Math.random() * combinedArray.length))]);

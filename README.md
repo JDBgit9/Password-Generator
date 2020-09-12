@@ -9,7 +9,7 @@ Added array and combined array syntax
 Had a mental block until study group.
 came up with new code.
 found an isNAN property that is cool and added it
-Created prompts for for loops 
+Created prompts for for loops and if prompts no else was needed
 
 ## Summary
 This was a challenging assigment, but I began to understand as I studied more into it. The study groups did help a lot and I am encouraged as I'm not alone. 
