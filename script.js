@@ -7,14 +7,15 @@ var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var numb = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"];
 
-
+//Confirmation of all characters in Generator
 var confirmSpecialChar;
 var confirmUppercase;
 var confirmLowercase;
 var confirmNumbers;
 
+//Make function
 function generatePassword() {
-  //Prompts for number of characters
+  
 
   // array to be stored here
   var combinedArray = [];
