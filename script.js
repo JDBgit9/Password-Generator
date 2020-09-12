@@ -39,7 +39,7 @@ function generatePassword() {
   }
 
   else {
-
+//Confirmation prompts to choose all characters 
     specialChar = confirm("Click OK if you want special characters in your password");
 
     if (specialChar) {
