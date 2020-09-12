@@ -27,12 +27,12 @@ function generatePassword() {
     alert("You must enter a number");
     return "Try Again!"
   }
-//Prompts for user to generate password length
+//Prompts for user to choose password length longer than 8 characters.
   if (numberChars < 8) {
     alert("Your password must be at least 8 characters")
     return "Try again"
   }
-
+//Prompt for user to choose password up to 128 characters.
   if (numberChars > 128) {
     alert("Password length must be less than 129 characters");
     return "Try Again!"
