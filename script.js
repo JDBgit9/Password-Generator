@@ -27,7 +27,7 @@ function generatePassword() {
     alert("You must enter a number");
     return "Try Again!"
   }
-
+//Prompts for user to generate password length
   if (numberChars < 8) {
     alert("Your password must be at least 8 characters")
     return "Try again"
