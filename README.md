@@ -1,8 +1,8 @@
 # Password-Generator
-Had issues with pulling my assigment into my vcs but finall got it to work
+Had some issues with pulling my assigment into my vcs but finally got it to work
 Added bootstrap link style.css link.
 Added arrays under assignment code
-Added all charcters foor the generator to generate
+Added all characters for the generator to generate
 added confirmation variables
 added function generate password
 Added array and combined array syntax
